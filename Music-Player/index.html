@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="titleFavicon.png">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="logo.png" alt="brand-logo">Playx</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="heading">
+            <h2>Night Phonk</h2>
+        </div>
+        <div class="item">
+            <div class="phonkItem">
+                <img src="./Music/Samurai.png" alt="1stCover">
+                <span class="phonkName">Samurai-AlexiAction</span>
+                <span class="listPlay"><span class="timeStamp"><i id="0" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="phonkItem">
+                <img src="./Music/Metamorphosis.png" alt="2ndCover">
+                <span class="phonkName">Metamorphosis-INTERWORLD</span>
+                <span class="listPlay"><span class="timeStamp"><i id="1" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="phonkItem">
+                <img src="./Music/LifeInRio.png" alt="3rdCover">
+                <span class="phonkName">Life In Rio-Crazy Mano</span>
+                <span class="listPlay"><span class="timeStamp"><i id="2" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="phonkItem">
+                <img src="./Music/WakeUp.png" alt="4thCover">
+                <span class="phonkName">Wake Up-MoonDeity</span>
+                <span class="listPlay"><span class="timeStamp"><i id="3" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="phonkItem">
+                <img src="./Music/MurderInMyMind.png" alt="5thCover">
+                <span class="phonkName">Murder In My Mind-KORDHELL</span>
+                <span class="listPlay"><span class="timeStamp"><i id="4" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+            <div class="phonkItem">
+                <img src="./Music/Ghost.png" alt="6thCover">
+                <span class="phonkName">Ghost-phonk.me</span>
+                <span class="listPlay"><span class="timeStamp"><i id="5" class="far phonkItemPlay fa-play-circle"></i></span></span>
+            </div>
+        </div>
+        <div class="phonkList"></div>
+        <div class="phonkBanner"></div>
+    </div>
+    <div class="bottom">
+        <div class="bar">
+            <div id="current_time">00:00</div>
+            <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+            <div id="total_time">00:00</div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-2x fa-step-backward" id="previous"></i>
+            <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+            <i class="fas fa-2x fa-step-forward" id="next"></i>
+            <i class="fa fa-volume-down Down"></i>
+	        <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+	        <i class="fa fa-volume-up"></i>
+            <i class="fa fa-solid fa-repeat" id="Repeat"></i>
+        </div>
+        <div class="songInfo">
+            <img src="./Music/music.gif" id="gif" width="40px" alt="music-bar"><Span id="masterPhonkName">Samurai-AlexiAction</Span>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
