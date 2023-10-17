@@ -7,4 +7,5 @@ ranging from a volume bar, next song to play in and music bar (equalizer).
 
 ## Utilities
 - HTML, CSS, Javascript
+- FontAwesome and GoogleAPIs
 - Visual Studio Code
