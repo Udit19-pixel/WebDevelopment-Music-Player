@@ -1,2 +1,6 @@
 # WebDevelopment-Music-Player
-A music player website
+A Front-end, music player website.
+
+## Project Description
+This music player website have all those functionalities that a normal music player has
+ranging from a volume bar, next song to play in and music bar (equalizer).
